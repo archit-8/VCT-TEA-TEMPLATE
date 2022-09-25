@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f8ff;
+}
+.b1
+ {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  font-size: 25px;
+  background-color:#EADDCA;
+  color: #CD7F32;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s all ease;
+  }
+.b2{
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  font-size: 25px;
+  color: #A52A2A;
+  font-weight: 800;
+  background-color: #EADDCA;
+  color: #CD7F32;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s all ease;
+  
+}
+.b3{
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  font-size: 25px;
+  color: #A52A2A;
+  background-color: #EADDCA;
+  color: #CD7F32;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s all ease;
+  
+}
+.b1:hover,.b2:hover,.b3:hover{
+  box-shadow: 10px 5px 50px 10px;
+}
+
+.bg-image{
+  background-image: url('./Images\ Tea/teaw.jpg') ;
+  height: 107vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+  bottom: 50px;
+  
+}
+
+.credentials {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%,-50%);
+}
+p{
+  font-family: 'Playfair Display', serif;
+}
+h1,h4{
+    font-family: 'Playfair Display', serif; 
+}
+
+
+
+hr {
+max-height: fit-content;
+}
+
+/* Bottom right text */
+
+.text-block {
+position: absolute;
+top: 60%;
+left:70%;
+background-color: transparent;
+color:black;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 5em;
+justify-content: center;
+
+}
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #6759ff;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #6759ff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+.button-value {
+  border: 2px solid #6759ff;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #6759ff;
+  cursor: pointer;
+}
+.active {
+  background-color: #6759ff;
+  color: #ffffff;
+}
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+.image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
